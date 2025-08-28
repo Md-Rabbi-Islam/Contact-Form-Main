@@ -248,6 +248,9 @@ textarea:-webkit-autofill:focus {
     .input-container,.query{
         flex-direction: column;
     }
+    #message{
+        height: 150px;
+    }
     .attribution{
         bottom: 1.5rem;
         font-size: 11px;
@@ -260,8 +263,7 @@ textarea:-webkit-autofill:focus {
     }
     .main-container.form-shift{
         padding-top: 8.3rem;
-    }
-    
+    }  
 }
 
 @media screen and (max-width:375px) {
@@ -289,6 +291,9 @@ textarea:-webkit-autofill:focus {
     }
     .form-container{
         padding: 1rem;
+    }
+    #message{
+        height: 120px;
     }
     .attribution{
         bottom: 1rem;
