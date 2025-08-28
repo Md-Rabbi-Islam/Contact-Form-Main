@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact form Main</title>
+</head>
+<body>
+  <main class="main-container">
+    
+    <div class="success-message">
+      <div class="success-header">
+        <img src="./assets/images/icon-success-check.svg" alt="icon-success-check">
+        <h2 class="success-title">Message Sent!</h2>
+      </div>
+      <p class="success-text">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <div class="form-container">
+      <h1 class="title">Contact Us</h1>
+      
+      <form action="/" class="contact-form" novalidate>
+        
+        <div class="name-input input-container">
+          <div class="first-name full-width">
+            <label class="input-label" for="first-name">First Name <span class="star">*</span></label>
+            <input class="medium-shadow same-error" type="text" name="first-name" id="first-name">
+            <p class="error-msg required-error"></p>
+          </div>
+          
+          <div class="last-name full-width">
+            <label class="input-label" for="Last Name">Last Name <span class="star">*</span></label>
+            <input class="medium-shadow same-error" type="text" name="Last Name" id="Last-Name">
+            <p class="error-msg required-error"></p>
+          </div>
+        </div>
+        
+        <div class="email">
+          <label for="email" class="input-label">Email Address <span class="star">*</span></label>
+          <input class="medium-shadow email-input" type="email" name="email" id="email">
+          <p class="error-msg" id="email-error"></p>
+        </div>
+        
+        <div class="query-type">
+          <label class="input-label" for="query">Query Type <span class="star">*</span></label>
+          <div class="query">
+
+            <label class="option full-width">
+              <input type="radio" name="query" id="query" value="General Enquiry">
+              <span class="custom-radio"></span>
+              <span class="radio-text">General Enquiry</span>
+            </label>
+            
+            <label class="option full-width">
+              <input type="radio" name="query" id="query" value="Support Request">
+              <span class="custom-radio"></span>
+              <span class="radio-text">Support Request</span>
+            </label>
+          
+          </div>
+          <p class="error-msg" id="query-error"></p>
+        </div>
+        
+        <div class="message-box">
+          <label class="msg-label" for="message">Message <span class="star">*</span></label>
+          <textarea class="medium-shadow same-error" name="message" id="message"></textarea>
+          <div class="error-msg required-error"></div>
+        </div>
+        
+        <div class="check">
+          <label class="checkbox-option">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <span class="custom-checkbox"></span>
+            <p class="checkbox-text"> I consent to being contacted by the team <span class="star">*</span></p>
+          </label>
+          <p class="error-msg" id="checkbox-error"></p>
+        </div>
+
+        <button id="submit-btn" type="submit">Submit</button>
+      
+      </form>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Md-Rabbi-Islam" target="_blank">Md Rabbi Islam</a>.
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
